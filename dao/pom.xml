@@ -185,6 +185,9 @@
                     <includes>
                         <include>**/*TestSuite.java</include>
                     </includes>
+
+                    <skipTests>true</skipTests>
+
                 </configuration>
             </plugin>
 		    <plugin>

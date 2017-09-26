@@ -279,6 +279,7 @@
                     <systemPropertyVariables>
                         <spring.config.name>thingsboard</spring.config.name>
                     </systemPropertyVariables>
+                    <skipTests>true</skipTests>
                     <includes>
                         <include>**/*TestSuite.java</include>
                     </includes>

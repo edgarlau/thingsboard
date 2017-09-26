@@ -69,7 +69,7 @@ public class CustomSqlUnit extends ExternalResource {
                 conn.createStatement().execute(sql);
             }
         } catch (IOException | SQLException e) {
-            throw new RuntimeException("Unable to start embedded hsqldb. Reason: " + e.getMessage(), e);
+            throw new RuntimeException("Unable to start embedded postgresql. Reason: " + e.getMessage(), e);
         } finally {
             if (conn != null) {
                 try {
@@ -94,7 +94,7 @@ public class CustomSqlUnit extends ExternalResource {
             String dropAllTablesSql = Resources.toString(dropAllTableSqlFileUrl, Charsets.UTF_8);
             conn.createStatement().execute(dropAllTablesSql);
         } catch (IOException | SQLException e) {
-            throw new RuntimeException("Unable to clean up embedded hsqldb. Reason: " + e.getMessage(), e);
+            throw new RuntimeException("Unable to clean up embedded postgresql. Reason: " + e.getMessage(), e);
         } finally {
             if (conn != null) {
                 try {

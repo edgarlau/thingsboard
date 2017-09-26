@@ -42,7 +42,8 @@ public class JpaDbunitTestConfig {
     @Bean
     public DatabaseConfigBean databaseConfigBean() {
         DatabaseConfigBean databaseConfigBean = new DatabaseConfigBean();
-        databaseConfigBean.setDatatypeFactory(new HsqldbDataTypeFactory());
+//        databaseConfigBean.setDatatypeFactory(new HsqldbDataTypeFactory());
+        databaseConfigBean.setDatatypeFactory(new PostgresqlDataTypeFactory());
         return databaseConfigBean;
     }
 

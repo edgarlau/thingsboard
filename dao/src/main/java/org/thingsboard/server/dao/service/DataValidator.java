@@ -42,7 +42,7 @@ public abstract class DataValidator<D extends BaseData<?>> {
                 validateUpdate(data);
             }
         } catch (DataValidationException e) {
-            log.error("Data object is invalid: [{}]", e.getMessage());
+//            log.error("Data object is invalid: [{}]", e.getMessage());
             throw e;
         }
     }
